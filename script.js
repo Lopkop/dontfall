@@ -18,3 +18,4 @@ rusBtn.addEventListener('click', () => {
 
 // Play video on page load
 video.play();
+video.muted = false;
