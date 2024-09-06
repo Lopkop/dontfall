@@ -1,20 +1,18 @@
-const video = document.getElementById('video');
 const engBtn = document.getElementById('eng-btn');
 const rusBtn = document.getElementById('rus-btn');
-const textContainer = document.querySelector('.text-container');
-const engText = document.querySelector('.eng-text');
-const rusText = document.querySelector('.rus-text');
+const enContainer = document.getElementsByClassName('en-container');
+const rusContainer = document.getElementsByClassName('rus-container');
 
-// Set language on button click
+
 engBtn.addEventListener('click', () => {
-    engText.style.display = 'block';
-    rusText.style.display = 'none';
+  rusContainer[0].hidden = true;
+  enContainer[0].hidden = false;
 });
+
 
 rusBtn.addEventListener('click', () => {
-    engText.style.display = 'none';
-    rusText.style.display = 'block';
+  rusContainer[0].hidden = false;
+  enContainer[0].hidden = true;
 });
 
-// Play video on page load
-video.muted = false;
+
