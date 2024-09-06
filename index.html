@@ -7,20 +7,29 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <video id="video" class="video-container" controls onloadedmetadata="this.muted = true" playsinline autoplay muted loop preload="auto">
+    <div class="language-selector">
+        <button id="eng-btn">English</button>
+        <button id="rus-btn">Русский</button>
+  </div>
+    
+  </br>
+  </br>
+  </br>
+    <div class="en-container">
+        <h1 id="text">1. 12 prostrations with "God cleanse me a sinner"</h1>
+        <h1 id="text">2. 12 prostrations with "Lord Jesus Christ, Son of God, have mercy on me, a sinner"</h1>
+    </div>
+
+    <div class="rus-container" hidden=true>
+        <h1 id="text">1. 12 земных поклонов, говоря "Боже очисти меня грешного"</h1>
+        <h1 id="text">2. 12 земных поклонов, говоря "Господи, Иисусе Христе, Сыне Божий, помилуй мя грешнаго"</h1>
+    </div>
+
+    <video id="video" class="video-container" controls playsinline autoplay loop preload="auto">
       <source src="battle.webm" type="video/webm">
     Your browser does not support the video tag.
     </video>
 
-    <div class="language-selector">
-        <button id="eng-btn">English</button>
-        <button id="rus-btn">Русский</button>
-    </div>
-    
-    <div class="text-container">
-        <h1 id="text" class="eng-text">instructions</h1>
-        <h1 id="text" class="rus-text" hidden=true>na ruskom</h1>
-    </div>
 </body>
 <script src="script.js"></script>
 </html>
