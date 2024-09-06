@@ -1,3 +1,14 @@
+@font-face {
+  font-family: 'Krasnii Fellows';
+  src: url('krasni-fellows.ttf') format('truetype');
+}
+
+
+body {
+   font-family: 'Krasnii Fellows';
+}
+
+
 .video-container {
     position: relative;
     width: 100%;
